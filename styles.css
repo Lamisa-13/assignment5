@@ -4,8 +4,12 @@
     padding: 0;
 }
 
+:root{
+    --green-color: rgb(21, 190, 21);
+}
+
 header{
-    border: 2px solid black;
+    border: 2px solid rgb(255, 13, 13);
     display: flex;
     align-items: center;
     justify-content:end;
@@ -31,7 +35,7 @@ header > div img{
 }
 
 .copy{
-    background-color: rgb(21, 190, 21);
+    background-color: var(--green-color);
     color: white
 }
 
@@ -39,4 +43,111 @@ header > div img{
     background-color: rgb(200, 242, 243);
     color: black;
     font-weight: bolder;
+}
+
+
+.services{
+    border: 2px solid black;
+    margin-top: 40px;
+    height: 300px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.service{
+    /* border: 2px solid rgb(6, 69, 255); */
+    box-shadow: 0 3px 3px 0 rgb(131, 130, 130);
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.service img{
+    width: 20px;
+    height: 20px;
+}
+
+.service > div{
+    /* border: 2px solid green; */
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service .second{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+
+.service .third{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.service .third #label-emergency-purpose{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 25px;
+    background-color: rgb(220, 218, 218);
+}
+
+.service .fourth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service .fourth .copy-button, .service .fourth .call-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    gap: 10px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.service .fourth .call-button{
+    background-color: var(--green-color);
+    color: white;
+}
+
+
+
+.service .fourth .copy-button{
+    border: 1px solid black;
+}
+
+.service .third  #emergency-number{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.service .first #emergency-logo{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 160, 160);
 }
