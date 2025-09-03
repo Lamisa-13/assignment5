@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    gap: 20px;
+
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    width: 80px;
+    gap: 5px;
+
+}
+
+header > div img{
+    width: 20px;
+    height: 20px;
+}
+
+.copy{
+    background-color: rgb(21, 190, 21);
+    color: white
+}
+
+.coins, .wishlist{
+    background-color: rgb(200, 242, 243);
+    color: black;
+    font-weight: bolder;
+}
