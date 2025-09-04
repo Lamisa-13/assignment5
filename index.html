@@ -13,7 +13,7 @@
             <img src="assets/heart.png" alt="heart logo">
         </div>
         <div class = "coins">
-            <span id = "counter-coins">0</span>
+            <span id = "counter-coins">5</span>
             <img src="assets/coin.png" alt="coin logo">
         </div>
         <div class = "copy">
@@ -26,17 +26,17 @@
             <div class = "services">
                 <div class = "service">
                     <div class= "first">
-                        <img id = "emergency-logo" src="assets/emergency.png" alt="emergency logo">
-                        <img src="assets/wishlist.png" alt="wishlist logo">
+                        <img class = "emergency-logo" src="assets/emergency.png" alt="emergency logo">
+                        <img class = "wishlist-logo" src="assets/wishlist.png" alt="wishlist logo">
                     </div>
                     <div class = "second">
-                        <span id = "label-emergency-title">National Emergency Number</span>
-                        <span id = "label-emergency-subtitle">National Emergency</span>
+                        <span class = "label-emergency-title">National Emergency Number</span>
+                        <span class = "label-emergency-subtitle">National Emergency</span>
                     </div>
 
                     <div class = "third">
-                        <span id = "emergency-number">999</span>
-                        <span id = "label-emergency-purpose">All</span>
+                        <span class = "emergency-number">999</span>
+                        <span class = "label-emergency-purpose">All</span>
                     </div>
                     <div class = "fourth">
                         <div class = "copy-button"><img src="assets/interface.png" alt="interface logo">Copy</div>
@@ -46,17 +46,17 @@
                 </div>
                 <div class = "service">
                     <div class= "first">
-                        <img id = "emergency-logo" src="assets/emergency.png" alt="emergency logo">
-                        <img src="assets/wishlist.png" alt="wishlist logo">
+                        <img id = "police-logo" class = "emergency-logo" src="assets/police.png" alt="police logo">
+                        <img class = "wishlist-logo" src="assets/wishlist.png" alt="wishlist logo">
                     </div>
                     <div class = "second">
-                        <span id = "label-emergency-title">National Emergency Number</span>
-                        <span id = "label-emergency-subtitle">National Emergency</span>
+                        <span class = "label-emergency-title">Police Helpline Number</span>
+                        <span class = "label-emergency-subtitle">Police</span>
                     </div>
 
                     <div class = "third">
-                        <span id = "emergency-number">999</span>
-                        <span id = "label-emergency-purpose">All</span>
+                        <span class = "emergency-number">999</span>
+                        <span class = "label-emergency-purpose">All</span>
                     </div>
                     <div class = "fourth">
                         <div class = "copy-button"><img src="assets/interface.png" alt="interface logo">Copy</div>
@@ -67,11 +67,15 @@
             </div>
             <div class = "history">
                 <div class = "history-heading">
-                    <img src="assets/clock.png" alt="clock logo">
-                    <div class = "clear">Clear</div>
+                    <div class = "call-history-title">
+                        <img src="assets/clock.png" alt="clock logo">
+                        <span>Call History</span>
+                    </div>
+
+                    <div class = "clear">Clear</div>    
                 </div>
                 <div class = "history-list">
-                    
+                    <!-- Call history items will be appended here dynamically -->
                 </div>
             </div>
         </div>

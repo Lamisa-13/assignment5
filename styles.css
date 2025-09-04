@@ -6,10 +6,11 @@
 
 :root{
     --green-color: rgb(21, 190, 21);
+    --blue-color: rgb(208, 227, 243);
 }
 
 header{
-    border: 2px solid rgb(255, 13, 13);
+    /* border: 2px solid rgb(255, 13, 13); */
     display: flex;
     align-items: center;
     justify-content:end;
@@ -47,7 +48,7 @@ header > div img{
 
 
 .services{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 40px;
     height: 300px;
     width: 900px;
@@ -61,13 +62,14 @@ header > div img{
     /* border: 2px solid rgb(6, 69, 255); */
     box-shadow: 0 3px 3px 0 rgb(131, 130, 130);
     width: 400px;
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: start;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     border-radius: 10px;
+    gap:10px;
 }
 
 .service img{
@@ -98,7 +100,7 @@ header > div img{
 
 }
 
-.service .third #label-emergency-purpose{
+.service .third .label-emergency-purpose{
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -113,6 +115,7 @@ header > div img{
     align-items: center;
     justify-content: center;
     gap: 40px;
+
 }
 
 .service .fourth .copy-button, .service .fourth .call-button{
@@ -124,6 +127,7 @@ header > div img{
     width: 150px;
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
@@ -138,16 +142,111 @@ header > div img{
     border: 1px solid black;
 }
 
-.service .third  #emergency-number{
+.service .third  .emergency-number{
     font-size: 30px;
     font-weight: bolder;
 
 }
 
-.service .first #emergency-logo{
+.service .first .emergency-logo{
     width: 40px;
     height: 40px;
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(255, 160, 160);
+}
+.service .first #police-logo{
+    background-color: var(--blue-color);
+}
+
+.main-frame{
+    display: flex;
+    justify-content:space-around;
+    /* border: 2px solid blue; */
+    height: 600px;
+    margin-top: 20px;
+}
+
+.history{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 3px 3px 0 rgb(131, 130, 130);
+}
+.history-heading{
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 10px;
+}
+
+.history-heading div{
+    /* border: 2px solid red; */
+    padding: 5px;
+    width: 130px;
+}
+.history-heading img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.history-heading .clear{
+    cursor: pointer;
+}
+
+.call-history-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.clear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--green-color);
+}
+
+.history-list{
+    /* border: 2px solid rgb(255, 20, 173); */
+    overflow: auto;
+
+}
+
+.history-item{
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+
+}
+
+.history-item .first-history{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.history-item .second-history{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.wishlist-logo{
+    cursor: pointer;
 }
